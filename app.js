@@ -33,10 +33,10 @@ const data = {
 };
 
 const jsonData = JSON.stringify(data);
-const url = "https://us18.api.mailchimp.com/3.0/lists/6dc9d0f9fb";
+const url = "https://us{X}.api.mailchimp.com/3.0/lists/{idlist}";
 const options ={
   method: "POST",
-  auth: "vchea9:d5aa883041c740aa8ad33627bc3e6df2-us18"
+  auth: "{string}:{apikey}"
 }
 
 const request = https.request(url, options, function(response){
@@ -56,8 +56,3 @@ request.end();
 app.listen(process.env.PORT || 3000, function(){
   console.log("server is running");
 });
-
-
-// uniqueid
-//6dc9d0f9fb
-//d5aa883041c740aa8ad33627bc3e6df2-us18
