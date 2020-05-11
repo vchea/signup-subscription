@@ -1,7 +1,0 @@
-idList : 6dc9d0f9fb
-
-api : d5aa883041c740aa8ad33627bc3e6df2-us18
-
-auth: "vchea9:d5aa883041c740aa8ad33627bc3e6df2-us18";
-
-const url = "https://us18.api.mailchimp.com/3.0/lists/6dc9d0f9fb";
